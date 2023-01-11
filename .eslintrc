@@ -1,0 +1,49 @@
+{
+  "extends": ["@remix-run/eslint-config", "@remix-run/eslint-config/node"],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always-and-inside-groups"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "json": "always"
+      }
+    ],
+    "linebreak-style": "off",
+    "react/prop-types": "off",
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-unused-expressions": [
+      2,
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-console": "off",
+    "import/prefer-default-export": "off"
+  }
+}
